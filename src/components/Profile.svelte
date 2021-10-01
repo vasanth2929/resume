@@ -10,7 +10,7 @@
       <div class="line" />
     </div>
     <div class="description">
-      I am passionate about Frontend Technologies & I enjoy learning new things.
+      I'm passionate about Frontend Technologies & I enjoy learning new things.
     </div>
   </section>
 </Transition>

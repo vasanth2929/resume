@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Skill from "./shared/Skill.svelte";
   import Transition from "./shared/Transition.svelte";
 </script>
 
@@ -26,9 +27,23 @@
     </div>
     <div class="info-section-education info-section-item">
       <h3>EDUCATIONS</h3>
+
+      <div class="degree">
+        <h5>BACHELOR DEGREE</h5>
+        <p class="college">Karunya University | 2016-2019</p>
+        <p class="description">
+          I have complemented my BSC.IT degree with 83%.
+        </p>
+      </div>
     </div>
     <div class="info-section-skills info-section-item">
       <h3>SKILLS</h3>
+      <div class="skill-container">
+        <Skill skillname="HTML" skillRate={100} />
+        <Skill skillname="CSS" skillRate={100} />
+        <Skill skillname="JS" skillRate={100} />
+        <Skill skillname="REACT" skillRate={70} />
+      </div>
     </div>
   </section>
 </Transition>
@@ -48,6 +63,9 @@
   }
   .info-section-contact {
     padding-left: 0px;
+  }
+  .info-section-skills {
+    padding-right: 0px;
   }
   .info-section-contact,
   .info-section-education {
@@ -74,6 +92,26 @@
     margin-top: 20px;
   }
   .address {
+    margin-top: 10px;
+  }
+
+  .degree {
+    margin-top: 20px;
+  }
+
+  .degree h5 {
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+
+  .degree .college {
+    font-style: italic;
+  }
+
+  .degree .description {
+    padding-top: 10px;
+  }
+  .skill-container {
     margin-top: 10px;
   }
 </style>
