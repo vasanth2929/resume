@@ -31,9 +31,7 @@
       <div class="degree">
         <h5>BACHELOR DEGREE</h5>
         <p class="college">Karunya University | 2016-2019</p>
-        <p class="description">
-          I have complemented my BSC.IT degree with 83%.
-        </p>
+        <p class="description">I have completed my BSC.IT degree with 83%.</p>
       </div>
     </div>
     <div class="info-section-skills info-section-item">
