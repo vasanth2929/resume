@@ -1,21 +1,9 @@
-<script lang="ts">
-  import { onDestroy, onMount } from "svelte";
-
-  import { fly } from "svelte/transition";
-  let timer = null;
-  let showBlock = false;
-  onMount(() => {
-    timer = setTimeout(() => {
-      showBlock = true;
-    }, 1200);
-  });
-  onDestroy(() => {
-    clearTimeout(timer);
-  });
+<script>
+  import Transition from "./shared/Transition.svelte";
 </script>
 
-{#if showBlock}
-  <section class="profile-section" transition:fly={{ duration: 1000, x: 500 }}>
+<Transition x={500}>
+  <section class="profile-section">
     <div class="wrapper">
       <div class="line" />
       <h5>Profile</h5>
@@ -25,7 +13,7 @@
       I am passionate about Frontend Technologies & I enjoy learning new things.
     </div>
   </section>
-{/if}
+</Transition>
 
 <style>
   .profile-section {

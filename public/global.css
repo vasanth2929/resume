@@ -16,4 +16,5 @@ body {
   height: 100%;
   color: var(--primaryColor);
   background-color: rgb(233, 233, 233);
+  overflow-x: hidden;
 }
