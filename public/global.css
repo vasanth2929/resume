@@ -18,3 +18,8 @@ body {
   background-color: rgb(233, 233, 233);
   overflow-x: hidden;
 }
+
+.link {
+  color: var(--textColor);
+  text-decoration: none;
+}
