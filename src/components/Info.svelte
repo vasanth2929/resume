@@ -56,6 +56,7 @@
     border-right: 0;
     margin-top: 40px;
     color: var(--textColor);
+    max-height: 280px;
   }
   .info-section-item {
     flex: 1;
@@ -65,7 +66,30 @@
     padding-left: 0px;
   }
   .info-section-skills {
-    padding-right: 0px;
+    /* padding-right: 0px; */
+    overflow-y: auto;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
   .info-section-contact,
   .info-section-education {
