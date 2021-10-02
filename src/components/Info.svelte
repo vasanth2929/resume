@@ -138,4 +138,23 @@
   .skill-container {
     margin-top: 10px;
   }
+
+  @media screen and (max-width: 1000px) {
+    .info-section {
+      display: block;
+      border: none;
+      max-height: max-content !important;
+    }
+    .info-section-education,
+    .info-section-skills,
+    .info-section-contact {
+      border: 0px;
+      padding: 20px;
+      border: 1px solid var(--textColor);
+    }
+    .info-section-education,
+    .info-section-skills {
+      margin-top: 20px;
+    }
+  }
 </style>

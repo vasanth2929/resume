@@ -44,4 +44,13 @@
     font-size: 16px;
     letter-spacing: 2px;
   }
+
+  @media screen and (max-width: 720px) {
+    .name {
+      width: 90%;
+    }
+    .name h3 {
+      font-size: 42px;
+    }
+  }
 </style>
