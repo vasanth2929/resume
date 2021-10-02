@@ -1,6 +1,7 @@
 <script lang="ts">
   import Skill from "./shared/Skill.svelte";
   import Transition from "./shared/Transition.svelte";
+  import { store } from "../store";
 </script>
 
 <Transition x={-500} delay={900}>
@@ -9,12 +10,14 @@
       <h3>CONTACT</h3>
       <div class="contact-container">
         <span class="material-icons-outlined icon"> call </span>
-        <a href="tel:9791586271" class="link">9791586271</a>
+        <a href="tel:{$store.contact.phone}" class="link"
+          >{$store.contact.phone}</a
+        >
       </div>
       <div class="contact-container">
         <span class="material-icons-outlined icon"> email </span>
-        <a href="mailto:vasanth10098@gmail.com" class="link"
-          >vasanth10098@gmail.com</a
+        <a href="mailto:{$store.contact.email}" class="link"
+          >{$store.contact.email}</a
         >
       </div>
 
@@ -37,10 +40,9 @@
     <div class="info-section-skills info-section-item">
       <h3>SKILLS</h3>
       <div class="skill-container">
-        <Skill skillname="HTML" skillRate={100} />
-        <Skill skillname="CSS" skillRate={100} />
-        <Skill skillname="JS" skillRate={100} />
-        <Skill skillname="REACT" skillRate={70} />
+        {#each $store.skills as skill}
+          <Skill skillname={skill.name} skillRate={skill.skillRate} />
+        {/each}
       </div>
     </div>
   </section>

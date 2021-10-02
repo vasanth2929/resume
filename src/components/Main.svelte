@@ -3,13 +3,14 @@
   import Profile from "./Profile.svelte";
   import Info from "./Info.svelte";
   import Transition from "./shared/Transition.svelte";
+  import { store } from "../store";
 </script>
 
 <main class="main">
   <Transition y={-100} delay={200}>
     <div class="name">
-      <h3>VASANTH</h3>
-      <p>FRONTEND DEVELOPER</p>
+      <h3>{$store.name}</h3>
+      <p>{$store.role}</p>
     </div>
   </Transition>
 </main>
@@ -22,6 +23,7 @@
   .main {
     background-color: rgb(131, 131, 131);
     height: 120px;
+    text-transform: uppercase;
   }
   .name {
     background-color: white;
