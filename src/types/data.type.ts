@@ -6,6 +6,7 @@ export type Data = {
     email: string;
   };
   skills: Array<SkillType>;
+  profileDescription: string;
 };
 
 export type SkillType = {

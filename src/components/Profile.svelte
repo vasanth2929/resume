@@ -1,5 +1,6 @@
 <script>
   import Transition from "./shared/Transition.svelte";
+  import { store } from "../store";
 </script>
 
 <Transition x={500} delay={600}>
@@ -10,7 +11,7 @@
       <div class="line" />
     </div>
     <div class="description">
-      I'm passionate about Frontend Technologies & I enjoy learning new things.
+      {$store.profileDescription}
     </div>
   </section>
 </Transition>

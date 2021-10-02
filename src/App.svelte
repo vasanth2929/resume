@@ -4,7 +4,7 @@
   let loading = true;
   onMount(async () => {
     const res = await fetch(
-      "https://gist.githubusercontent.com/vasanth2929/c9b48dd0ea6da69f1238a9e776f2de17/raw/8b9124398ce9144735ac88c06cac4349e96bf83b/profile.json"
+      "https://gist.githubusercontent.com/vasanth2929/c9b48dd0ea6da69f1238a9e776f2de17/raw/946406bd6e383887c20f2ef8fce02c927cc83772/profile.json"
     );
     const data = await res.text();
     store.set(JSON.parse(data) as Data);
