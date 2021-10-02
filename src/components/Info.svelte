@@ -3,7 +3,7 @@
   import Transition from "./shared/Transition.svelte";
 </script>
 
-<Transition x={-500}>
+<Transition x={-500} delay={900}>
   <section class="info-section">
     <div class="info-section-contact info-section-item">
       <h3>CONTACT</h3>

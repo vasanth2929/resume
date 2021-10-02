@@ -2,7 +2,7 @@
   import Transition from "./shared/Transition.svelte";
 </script>
 
-<Transition x={500}>
+<Transition x={500} delay={600}>
   <section class="profile-section">
     <div class="wrapper">
       <div class="line" />

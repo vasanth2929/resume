@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { fly } from "svelte/transition";
   import Container from "./Container.svelte";
   import Profile from "./Profile.svelte";
   import Info from "./Info.svelte";
@@ -7,7 +6,7 @@
 </script>
 
 <main class="main">
-  <Transition y={-100}>
+  <Transition y={-100} delay={200}>
     <div class="name">
       <h3>VASANTH</h3>
       <p>FRONTEND DEVELOPER</p>
